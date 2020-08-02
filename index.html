@@ -1,43 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Egy szuper oldal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Bt 4.4.1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
+
 <body>
-    <ul>
-        <li><a href="/">Home</a>
-        </li>
-        <li><a href="/page/produkt.html">Produkt</a>
-        </li>
-        <li><a href="/page/orders.html">Orders</a>
-        </li>
-        <li><a href="/page/about.html">About</a>
-        </li>
-    </ul>
-<h1>Fantasztikus burger</h1>
-<ul>
-    <li>Húsimádó
-        <ul><li>Marha</li>
-            <li>Sertés</li>
-            <li>Csirke</li>
-        </ul>
-    </li>
-    <li>Vegetáriánus</li>
-    <li>Piedone</li>
-</ul>
-<h2>Plusz feltét</h2>
-<ol>
-    <li>paradicsom</li>
-    <li>ananász</li>
-   <li>paprika</li>
-   <li>chili</li>
-</ol>
-<a href="https://www.nosalty.hu/recept/hamburger-jamie-olivertol">
-Jamie Oliver receptje</a>
-<a href="pages/orders.html">orders</a>
-<a target="blank" href="https://www.nosalty.hu/recept/hamburger-jamie-olivertol">
-    <img width="56"  src="img/burger.jpg" alt="Fincsi burger"></a>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <h3>Hamburger rendelés</h3>
+                <div class="alert alert-info alert-dismissible fade show" role="alert">
+                    <strong>Kedves vásárlónk!</strong> 
+                    A rendeléshez kérjük töltse ki az űrlapot.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form id="orderForm" action="">
+                    <div class="form-group">
+                        <label for="">Feltét</label>
+                        <select id="topInput" name="top-input" class="form-control">
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Mennyiség</label>
+                        <input type="number" name="amount-input" class="form-control" value="1">
+                        <small class="form-text text-muted">
+                            Minimum 1, maximum 10 db.
+                        </small>
+                    </div>
+                    <div class="form-group">
+                        Fizetendő: <span class="show-amount">0</span> Ft.
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Megrendel</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+       <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>-->
+    <script src="js/main.js"></script>
+    <!-- <script src="js/scope.js"></script> -->
+    <!-- <script src="js/algo.js"></script> -->
 </body>
+
 </html>
