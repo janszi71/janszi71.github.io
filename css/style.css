@@ -1,0 +1,26 @@
+@font-face{
+    font-family: 'themify';
+    src: url('fonts/Themify/themify.ttf');
+    font-weight: 500;
+}
+
+h1 {
+    color: red;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+h2 {
+    color: green;
+    font-family: 'themify';
+}
+li{
+    color:grey;
+    text-transform: lowercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    line-height: 50px;
+}
+img{
+    width: 150px
+}
